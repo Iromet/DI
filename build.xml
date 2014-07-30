@@ -1,0 +1,35 @@
+<project name="DI" default="build">
+	<description>
+        	simple example build file
+	</description>
+
+    	<target name="build" depends="prepare">
+    		
+    	</target>
+	
+	<!-- Test de la syntaxe du php -->
+    	<target name="prepare" depends="clean">
+        	<apply executable="php">
+			<arg value="-l" />
+
+		<fileset dir="${basedir}/src">
+			<include name="*.php" />
+			<modified />
+		</fileset>
+
+		<fileset dir="${basedir}/test">
+			<include name="*.php" />
+			<modified />
+		</fileset>
+		</apply>
+		
+    	</target>
+	
+	<!-- Suppression des anciens répertoire -->
+	<target name="clean">
+        	<delete dir="${basedir}/build/api" />
+		<delete dir="${basedir}/build/logs" />
+		<delete dir="${basedir}/build/coverage" />
+		<delete dir="${basedir}/build/pdepend" />
+    	</target>
+</project>
