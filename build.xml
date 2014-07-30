@@ -3,26 +3,34 @@
         	simple example build file
 	</description>
 
-    	<target name="build" depends="prepare">
+    	<target name="build" depends="prepare,lint">
     		
     	</target>
 	
 	<!-- Test de la syntaxe du php -->
-    	<target name="prepare" depends="clean">
+    	<target name="lint">
         	<apply executable="php">
 			<arg value="-l" />
 
 		<fileset dir="${basedir}/src">
-			<include name="*.php" />
+			<include name="**/*.php" />
 			<modified />
 		</fileset>
 
 		<fileset dir="${basedir}/test">
-			<include name="*.php" />
+			<include name="**/*.php" />
 			<modified />
 		</fileset>
 		</apply>
 		
+    	</target>
+	
+	<!-- Création des répertoires -->
+	<target name="prepare" depends="clean">
+        	<mkdir dir="${basedir}/build/api" />
+		<mkdir dir="${basedir}/build/logs" />
+		<mkdir dir="${basedir}/build/coverage" />
+		<mkdir dir="${basedir}/build/pdepend" />
     	</target>
 	
 	<!-- Suppression des anciens répertoire -->
