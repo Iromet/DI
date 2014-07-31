@@ -3,7 +3,7 @@
         	simple example build file
 	</description>
 
-    	<target name="build" depends="prepare,lint">
+    	<target name="build" depends="prepare,lint,phpcs">
     		
     	</target>
 	
