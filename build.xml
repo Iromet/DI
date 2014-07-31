@@ -3,10 +3,11 @@
         	simple example build file
 	</description>
 
-    	<target name="build" depends="prepare,lint">
+    	<target name="build" depends="prepare,lint,phpunit">
     		
     	</target>
 	
+
 	<!-- Test de la syntaxe du php -->
     	<target name="lint">
         	<apply executable="php">
@@ -40,4 +41,9 @@
 		<delete dir="${basedir}/build/coverage" />
 		<delete dir="${basedir}/build/pdepend" />
     	</target>
+
+	<target name="phpunit">
+		<exec executable="phpunit">
+		</exec>
+	</target>
 </project>
