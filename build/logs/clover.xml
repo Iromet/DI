@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1406802535">
+  <project timestamp="1406802535">
+    <package name="DAO">
+      <file name="/home/android/projet/src/dao/daousersession.php">
+        <class name="DAOUserSession" namespace="DAO">
+          <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="23" coveredelements="0"/>
+        </class>
+        <line num="13" type="method" name="getUser" crap="12" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="31" type="method" name="register" crap="2" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="39" type="method" name="get" crap="2" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="44" type="method" name="set" crap="6" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <metrics loc="51" ncloc="39" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="23" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Entity">
+      <file name="/home/android/projet/src/entity/user.php">
+        <class name="User" namespace="Entity">
+          <metrics methods="9" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="5" elements="28" coveredelements="7"/>
+        </class>
+        <line num="15" type="method" name="__construct" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="28" type="method" name="serialize" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="33" type="method" name="unserialize" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="getNom" crap="2" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="45" type="method" name="getPrenom" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="49" type="method" name="getAge" crap="2" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="setNom" crap="2" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="57" type="method" name="setPrenom" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="61" type="method" name="setAge" crap="2" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <metrics loc="64" ncloc="45" classes="1" methods="9" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="5" elements="28" coveredelements="7"/>
+      </file>
+    </package>
+    <package name="Service">
+      <file name="/home/android/projet/src/service/serviceuser.php">
+        <class name="ServiceUser" namespace="Service">
+          <metrics methods="7" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="3" elements="17" coveredelements="5"/>
+        </class>
+        <line num="11" type="method" name="__construct" crap="1" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="15" type="method" name="get" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="19" type="method" name="getUser" crap="2" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="method" name="register" crap="2" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="28" type="method" name="set" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="33" type="method" name="fullName" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="37" type="method" name="birthyear" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <metrics loc="40" ncloc="36" classes="1" methods="7" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="3" elements="17" coveredelements="5"/>
+      </file>
+    </package>
+    <metrics files="3" loc="155" ncloc="120" classes="3" methods="20" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="8" elements="68" coveredelements="12"/>
+  </project>
+</coverage>

@@ -6,7 +6,7 @@ class ServiceUserTest extends PHPUnit_Framework_TestCase {
 
 	function __construct() {
 		$this->mock = $this->GetMockBuilder("DAO\DAOUserSession")->getMock();
-		$mock->method("get")->will($this->returnValue("John"));
+		$this->mock->method("get")->will($this->returnValue("John"));
 	}
 
 	/**
@@ -17,7 +17,7 @@ class ServiceUserTest extends PHPUnit_Framework_TestCase {
 		// $mock = $this->GetMockBuilder("DAO\DAOUserSession")->getMock();
 		// $mock->method("get")->will($this->returnValue("John"));
 
-		$service = new Service\ServiceUser($mock);
+		$service = new Service\ServiceUser($this->mock);
 		$this->assertEquals("John John", $service->fullName());
 	}
 }
