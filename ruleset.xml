@@ -1,0 +1,37 @@
+<?xml version="1.0"?> 
+<ruleset name="My Standards"> 
+    <description>My Coding Standards enforcement rule set for PHP_CodeSniffer</description> 
+    <rule ref="PSR2.Classes.PropertyDeclaration" /> 
+    <rule ref="PSR2.ControlStructures.ElseIfDeclaration" /> 
+    <rule ref="PSR2.Files.EndFileNewline" /> 
+    <rule ref="PSR2.Methods.MethodDeclaration" /> 
+    <rule ref="PSR2.Namespaces.NamespaceDeclaration" />    
+    <rule ref="PSR2.Namespaces.UseDeclaration" />  
+
+    <rule ref="Squiz.Arrays.ArrayBracketSpacing" /> 
+    <rule ref="Squiz.Arrays.ArrayDeclaration" /> 
+
+    <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops" />  
+
+
+    <!-- Removing Sniffs from Generic as we do not want these -->
+    <rule ref="Generic"> 
+        <exclude name="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop" />       
+        <exclude name="Generic.Commenting.Fixme" /> 
+        <exclude name="Generic.Commenting.Todo" /> 
+        <exclude name="Generic.Files.EndFileNoNewline" /> 
+        <exclude name="Generic.Files.LineEndings" /> 
+        <exclude name="Generic.Files.LineLength" /> 
+        <exclude name="Generic.Files.OneClassPerFile" /> 
+        <exclude name="Generic.Files.OneInterfacePerFile" /> 
+        <exclude name="Generic.Formatting.NoSpaceAfterCast" /> 
+        <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie" /> 
+        <exclude name="Generic.NamingConventions.CamelCapsFunctionName" /> 
+        <exclude name="Generic.PHP.ClosingPHPTag" /> 
+        <exclude name="Generic.PHP.LowerCaseConstant" /> 
+        <exclude name="Generic.VersionControl.SubversionProperties" /> 
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" /> 
+        <exclude name="Generic.WhiteSpace.DisallowTabIndent" /> 
+        <exclude name="Generic.Files.LowercasedFilename" /> 
+    </rule> 
+</ruleset> 
