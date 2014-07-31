@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Projet" tests="4" assertions="3" failures="0" errors="1" time="0.071795">
+    <testsuite name="ServiceUserTest" file="/home/android/projet/test/unit/serviceusertest.php" tests="1" assertions="1" failures="0" errors="0" time="0.057038">
+      <testcase name="testFullName" class="ServiceUserTest" file="/home/android/projet/test/unit/serviceusertest.php" line="16" assertions="1" time="0.057038"/>
+    </testsuite>
+    <testsuite name="UserTest" file="/home/android/projet/test/unit/usertest.php" tests="2" assertions="2" failures="0" errors="0" time="0.011831">
+      <testcase name="testTrue" class="UserTest" file="/home/android/projet/test/unit/usertest.php" line="4" assertions="1" time="0.004250"/>
+      <testcase name="testGetPrenom" class="UserTest" file="/home/android/projet/test/unit/usertest.php" line="8" assertions="1" time="0.007581"/>
+    </testsuite>
+    <testsuite name="ServiceTest" file="/home/android/projet/test/integration/serviceusertest.php" tests="1" assertions="0" failures="0" errors="1" time="0.002926">
+      <testcase name="testintegration" class="ServiceTest" file="/home/android/projet/test/integration/serviceusertest.php" line="8" assertions="0" time="0.002926">
+        <error type="PHPUnit_Framework_Error_Warning">ServiceTest::testintegration
+Missing argument 1 for Service\ServiceUser::__construct(), called in /home/android/projet/test/integration/serviceusertest.php on line 9 and defined
+
+/home/android/projet/src/service/serviceuser.php:11
+/home/android/projet/test/integration/serviceusertest.php:9
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>
