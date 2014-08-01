@@ -3,7 +3,7 @@
         	simple example build file
 	</description>
 
-    	<target name="build" depends="prepare,lint,phpcs,phpunit">
+    	<target name="build" depends="prepare,lint,phpcs,phpunit,phploc,pdepend">
     		
     	</target>
 	
@@ -55,4 +55,20 @@
 			 --ignore=${basedir}/src/web" />
 		</exec>
 	 </target>
+	 <target name="pdepend">
+	 	<exec executable="pdepend">
+	 		<arg line="--summary-xml=${basedir}/build/logs/summary.xml
+	 		--jdepend-chart=${basedir}/build/logs/jdepend.svg
+	 		--overview-pyramid=${basedir}/build/logs/pyramid.svg 
+	 		${basedir}/src" />
+	 	</exec>
+	 </target>
+	 <target name="phploc" description="Measure project size using PHPLOC">
+    	<exec executable="phploc">
+	        <arg value="--log-csv" />
+	        <arg value="${basedir}/build/logs/phploc.csv" />
+	        <arg path="${basedir}/src"/>
+	    </exec>
+</target>
+
 </project>

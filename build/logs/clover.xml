@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1406812468">
-  <project timestamp="1406812468">
+<coverage generated="1406884698">
+  <project timestamp="1406884698">
     <package name="DAO">
       <file name="/home/android/projet/src/dao/daousersession.php">
         <class name="DAOUserSession" namespace="DAO">
@@ -93,6 +93,20 @@
         <metrics loc="40" ncloc="36" classes="1" methods="7" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="3" elements="17" coveredelements="5"/>
       </file>
     </package>
-    <metrics files="3" loc="155" ncloc="120" classes="3" methods="20" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="8" elements="68" coveredelements="12"/>
+    <file name="/home/android/projet/test/integration/integrausertest.php">
+      <class name="integraUserTest" namespace="global">
+        <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="8" type="method" name="integraUser" crap="12" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <metrics loc="16" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <metrics files="4" loc="171" ncloc="133" classes="4" methods="21" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="55" coveredstatements="8" elements="76" coveredelements="12"/>
   </project>
 </coverage>

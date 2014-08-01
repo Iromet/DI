@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2014-08-01T11:18:35" pdepend="@package_version@" ahh="0" andc="0" calls="48" ccn="37" ccn2="37" cloc="80" clsa="0" clsc="5" eloc="193" fanout="2" leafs="5" lloc="136" loc="318" maxDIT="0" ncloc="238" noc="5" nof="1" noi="2" nom="39" nop="4" roots="0">
+  <files>
+    <file name="/home/android/projet/src/dic.php" cloc="13" eloc="26" lloc="14" loc="45" ncloc="32"/>
+    <file name="/home/android/projet/src/config.php" cloc="5" eloc="8" lloc="2" loc="15" ncloc="10"/>
+    <file name="/home/android/projet/src/dao/daousercookie.php" cloc="13" eloc="38" lloc="27" loc="58" ncloc="45"/>
+    <file name="/home/android/projet/src/dao/daousersession.php" cloc="11" eloc="35" lloc="24" loc="52" ncloc="41"/>
+    <file name="/home/android/projet/src/entity/user.php" cloc="15" eloc="39" lloc="27" loc="65" ncloc="50"/>
+    <file name="/home/android/projet/src/service/serviceuser.php" cloc="4" eloc="28" lloc="18" loc="41" ncloc="37"/>
+  </files>
+  <package name="+global" cr="0.15" noc="1" nof="1" noi="0" nom="3" rcr="0.15">
+    <class name="Dic" ca="0" cbo="0" ce="0" cis="1" cloc="11" cr="0.15" csz="3" dit="0" eloc="18" impl="0" lloc="10" loc="39" ncloc="28" noam="0" nocc="0" nom="3" noom="0" npm="1" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="5" wmci="5" wmcnp="2">
+      <file name="/home/android/projet/src/dic.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="getDAO" ccn="2" ccn2="2" cloc="0" eloc="8" lloc="5" loc="10" ncloc="10" npath="2"/>
+      <method name="service" ccn="2" ccn2="2" cloc="0" eloc="8" lloc="5" loc="10" ncloc="10" npath="2"/>
+    </class>
+    <function name="conf" ccn="1" ccn2="1" cloc="0" eloc="6" lloc="1" loc="7" ncloc="7" npath="1">
+      <file name="/home/android/projet/src/config.php"/>
+    </function>
+  </package>
+  <package name="DAO" cr="0.15" noc="2" nof="0" noi="1" nom="13" rcr="0.15">
+    <class name="DAOUserCookie" ca="0" cbo="1" ce="1" cis="5" cloc="12" cr="0.15" csz="7" dit="0" eloc="31" impl="1" lloc="18" loc="52" ncloc="40" noam="0" nocc="0" nom="5" noom="0" npm="5" rcr="0.21375" vars="2" varsi="2" varsnp="0" wmc="8" wmci="8" wmcnp="8">
+      <file name="/home/android/projet/src/dao/daousercookie.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getUser" ccn="3" ccn2="3" cloc="0" eloc="10" lloc="5" loc="10" ncloc="10" npath="3"/>
+      <method name="register" ccn="1" ccn2="1" cloc="0" eloc="7" lloc="5" loc="7" ncloc="7" npath="1"/>
+      <method name="get" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="set" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="5" loc="7" ncloc="7" npath="5"/>
+    </class>
+    <class name="DAOUserSession" ca="0" cbo="1" ce="1" cis="4" cloc="10" cr="0.15" csz="5" dit="0" eloc="29" impl="1" lloc="17" loc="46" ncloc="36" noam="0" nocc="0" nom="4" noom="0" npm="4" rcr="0.21375" vars="1" varsi="1" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="/home/android/projet/src/dao/daousersession.php"/>
+      <method name="getUser" ccn="3" ccn2="3" cloc="0" eloc="11" lloc="5" loc="11" ncloc="11" npath="3"/>
+      <method name="register" ccn="1" ccn2="1" cloc="0" eloc="7" lloc="5" loc="7" ncloc="7" npath="1"/>
+      <method name="get" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="set" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="5" loc="7" ncloc="7" npath="5"/>
+    </class>
+  </package>
+  <package name="Entity" cr="0.15" noc="1" nof="0" noi="0" nom="9" rcr="0.2775">
+    <class name="User" ca="2" cbo="0" ce="0" cis="9" cloc="9" cr="0.15" csz="12" dit="0" eloc="32" impl="1" lloc="14" loc="56" ncloc="47" noam="0" nocc="0" nom="9" noom="0" npm="9" rcr="0.2775" vars="3" varsi="3" varsnp="0" wmc="9" wmci="9" wmcnp="9">
+      <file name="/home/android/projet/src/entity/user.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="5" ncloc="5" npath="1"/>
+      <method name="serialize" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="unserialize" ccn="1" ccn2="1" cloc="0" eloc="6" lloc="4" loc="6" ncloc="6" npath="1"/>
+      <method name="getNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getPrenom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getAge" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setNom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setPrenom" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setAge" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+  </package>
+  <package name="Service" cr="0.15" noc="1" nof="0" noi="1" nom="14" rcr="0.15">
+    <class name="ServiceUser" ca="0" cbo="0" ce="0" cis="7" cloc="0" cr="0.15" csz="8" dit="0" eloc="23" impl="1" lloc="9" loc="33" ncloc="33" noam="0" nocc="0" nom="7" noom="0" npm="7" rcr="0.2775" vars="1" varsi="1" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="/home/android/projet/src/service/serviceuser.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="get" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getUser" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="register" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="set" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="fullName" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="birthyear" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+  </package>
+</metrics>
